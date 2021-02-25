@@ -78,8 +78,7 @@ layui.use(['table','jquery','layer'], function(){
                                }else {
                                    alert(result.message);
                                }
-                               var index = parent.layer.getFrameIndex(window.name);
-                              parent.layer.close(index);
+                               layer.closeAll('dialog');//有效
                            }
                        })
                       }
